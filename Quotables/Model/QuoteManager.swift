@@ -1,0 +1,58 @@
+//
+//  QuoteManager.swift
+//  Handles the interactions with the API and Networking aspects of the code
+//
+//  Created by Praveen Bandarage on 1/12/20.
+//
+
+import Foundation
+
+class QuoteManger{
+    var quoteList = [Quote]()
+    let quoteURL = "https://praveenthemachine.github.io/quotes.json"
+
+    func getQuotes(){
+
+        //Optionaly binding URL constant
+        if let url = URL(string: quoteURL){
+            //Creates URL session object (like a browser)
+            let session = URLSession(configuration: .default)
+            
+            let task = session.dataTask(with: url) { (data, Response, error) in
+                if error != nil {
+                    print("Error occured \(error)")
+                    return
+                }
+      
+                    if let safeData = data{
+                        self.parseJSON(quoteData: safeData)
+                    }
+                
+                
+                }
+          
+            task.resume()
+            //starting the task
+        }
+
+        }
+
+
+    
+    
+    func parseJSON (quoteData: Data){
+        let decoder = JSONDecoder()
+        do{
+            let decodedData = try decoder.decode(quoteContainer.self, from: quoteData)
+    
+            self.quoteList = decodedData.quoteContainer.Quotes
+            print(quoteList)
+            }
+        catch{
+            print("ERROR \(error)")
+            
+        }
+       
+}
+}
+

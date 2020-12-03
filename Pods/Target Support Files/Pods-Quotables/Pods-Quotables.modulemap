@@ -1,0 +1,6 @@
+framework module Pods_Quotables {
+  umbrella header "Pods-Quotables-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h3q-ku-8CA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FredokaOne-Regular.ttf">
+            <string>FredokaOne-Regular</string>
+        </array>
+        <array key="Rubik-VariableFont_wght.ttf">
+            <string>RubikRoman-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Quote Table View Controller-->
+        <scene sceneID="Ihj-lR-ffd">
+            <objects>
+                <viewController id="h3q-ku-8CA" customClass="QuoteTableViewController" customModule="Quotables" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7fW-ox-g4f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D5I-nx-smG">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" systemColor="systemPinkColor"/>
+                                <color key="sectionIndexTrackingBackgroundColor" systemColor="systemOrangeColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="quoteCell" rowHeight="250" id="WnJ-Ux-dB3" customClass="QuoteTVC" customModule="Quotables" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="250"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WnJ-Ux-dB3" id="CYR-Jh-kto">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ql6-Xk-aaO">
+                                                    <rect key="frame" x="20" y="11" width="374" height="228"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gR9-Li-pZq">
+                                                            <rect key="frame" x="15" y="173" width="105" height="33"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="33" id="IBZ-oR-W21"/>
+                                                                <constraint firstAttribute="width" constant="105" id="VZ7-P3-KyU"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="RubikRoman-Regular" family="Rubik" pointSize="17"/>
+                                                            <state key="normal" title="Favourite">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="titleShadowColor" red="0.18823529410000001" green="0.20000000000000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </state>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJT-1E-OpE">
+                                                            <rect key="frame" x="134.5" y="173" width="105" height="33"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="105" id="BxS-Av-x91"/>
+                                                                <constraint firstAttribute="height" constant="33" id="iuB-7w-d1c"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="RubikRoman-Regular" family="Rubik" pointSize="17"/>
+                                                            <state key="normal" title="Copy">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="titleShadowColor" red="0.14117647059999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </state>
+                                                        </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YlM-Fi-PTX">
+                                                            <rect key="frame" x="15" y="30" width="344" height="75"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="344" id="OWf-nU-nYx"/>
+                                                                <constraint firstAttribute="height" constant="75" id="btK-Kj-cZZ"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="20"/>
+                                                            <color key="textColor" red="0.18823529410000001" green="0.20000000000000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OeM-gS-KaZ">
+                                                            <rect key="frame" x="15" y="112" width="344" height="25.5"/>
+                                                            <fontDescription key="fontDescription" name="RubikRoman-Regular" family="Rubik" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbD-Cn-bdg">
+                                                            <rect key="frame" x="255" y="173" width="105" height="33"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="33" id="82E-LW-SOw"/>
+                                                                <constraint firstAttribute="width" constant="105" id="bmJ-S7-Jrw"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="RubikRoman-Regular" family="Rubik" pointSize="17"/>
+                                                            <state key="normal" title="Share">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="titleShadowColor" red="0.14117647059999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </state>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="bJT-1E-OpE" firstAttribute="centerX" secondItem="Ql6-Xk-aaO" secondAttribute="centerX" id="28b-lM-scf"/>
+                                                        <constraint firstItem="YlM-Fi-PTX" firstAttribute="centerY" secondItem="Ql6-Xk-aaO" secondAttribute="centerY" constant="-46.5" id="2rF-FA-OWg"/>
+                                                        <constraint firstItem="YlM-Fi-PTX" firstAttribute="leading" secondItem="OeM-gS-KaZ" secondAttribute="leading" id="4ke-15-PCB"/>
+                                                        <constraint firstItem="YlM-Fi-PTX" firstAttribute="centerX" secondItem="Ql6-Xk-aaO" secondAttribute="centerX" id="8lG-eV-d1H"/>
+                                                        <constraint firstItem="DbD-Cn-bdg" firstAttribute="centerX" secondItem="Ql6-Xk-aaO" secondAttribute="centerX" constant="120.5" id="PJe-Ib-44X"/>
+                                                        <constraint firstItem="YlM-Fi-PTX" firstAttribute="trailing" secondItem="OeM-gS-KaZ" secondAttribute="trailing" id="Z5c-yx-Qsp"/>
+                                                        <constraint firstItem="OeM-gS-KaZ" firstAttribute="centerX" secondItem="Ql6-Xk-aaO" secondAttribute="centerX" id="aIF-34-OYk"/>
+                                                        <constraint firstItem="gR9-Li-pZq" firstAttribute="centerX" secondItem="Ql6-Xk-aaO" secondAttribute="centerX" constant="-119.5" id="flz-Bl-EjQ"/>
+                                                        <constraint firstItem="OeM-gS-KaZ" firstAttribute="centerY" secondItem="Ql6-Xk-aaO" secondAttribute="centerY" constant="10.75" id="l4z-an-U8H"/>
+                                                        <constraint firstItem="OeM-gS-KaZ" firstAttribute="top" secondItem="YlM-Fi-PTX" secondAttribute="bottom" constant="7" id="nnd-Md-LNf"/>
+                                                        <constraint firstItem="DbD-Cn-bdg" firstAttribute="centerY" secondItem="Ql6-Xk-aaO" secondAttribute="centerY" constant="75.5" id="sJD-5C-zSJ"/>
+                                                        <constraint firstItem="gR9-Li-pZq" firstAttribute="centerY" secondItem="Ql6-Xk-aaO" secondAttribute="centerY" constant="75.5" id="wYZ-Wy-3Na"/>
+                                                        <constraint firstItem="bJT-1E-OpE" firstAttribute="centerY" secondItem="Ql6-Xk-aaO" secondAttribute="centerY" constant="75.5" id="yjb-kc-qQc"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Ql6-Xk-aaO" firstAttribute="trailing" secondItem="CYR-Jh-kto" secondAttribute="trailingMargin" id="0hF-rR-aWW"/>
+                                                <constraint firstItem="Ql6-Xk-aaO" firstAttribute="top" secondItem="CYR-Jh-kto" secondAttribute="topMargin" id="KYx-Q7-kZh"/>
+                                                <constraint firstItem="Ql6-Xk-aaO" firstAttribute="leading" secondItem="CYR-Jh-kto" secondAttribute="leadingMargin" id="RQw-pf-2bp"/>
+                                                <constraint firstItem="Ql6-Xk-aaO" firstAttribute="bottom" secondItem="CYR-Jh-kto" secondAttribute="bottomMargin" id="g7i-lE-Tba"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.18823529410000001" green="0.20000000000000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="authorLabel" destination="OeM-gS-KaZ" id="yPl-fs-00c"/>
+                                            <outlet property="copyButton" destination="bJT-1E-OpE" id="K9L-f0-vtr"/>
+                                            <outlet property="favouriteButton" destination="gR9-Li-pZq" id="Uwv-hl-jNe"/>
+                                            <outlet property="quoteLabel" destination="YlM-Fi-PTX" id="tLU-gZ-DBA"/>
+                                            <outlet property="quoteView" destination="Ql6-Xk-aaO" id="Mk8-wf-RDQ"/>
+                                            <outlet property="shareButton" destination="DbD-Cn-bdg" id="XHj-Kb-wFf"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XoG-AR-Occ"/>
+                        <color key="backgroundColor" red="0.18823529411764706" green="0.20000000000000001" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="D5I-nx-smG" firstAttribute="top" secondItem="XoG-AR-Occ" secondAttribute="top" id="2qE-G7-R3Z"/>
+                            <constraint firstItem="XoG-AR-Occ" firstAttribute="bottom" secondItem="D5I-nx-smG" secondAttribute="bottom" id="QXh-su-fGA"/>
+                            <constraint firstItem="XoG-AR-Occ" firstAttribute="trailing" secondItem="D5I-nx-smG" secondAttribute="trailing" id="qjv-x3-nX7"/>
+                            <constraint firstItem="D5I-nx-smG" firstAttribute="leading" secondItem="XoG-AR-Occ" secondAttribute="leading" id="zdN-fY-EQh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="quoteTableView" destination="D5I-nx-smG" id="iD4-Vn-GVx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ccd-eo-ZvN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="215.94202898550725" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
