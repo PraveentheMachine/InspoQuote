@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1B812AC08A74521BA5F04EE3 /* Pods_Quotables.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 515DF4AFF3078E3BE2621D35 /* Pods_Quotables.framework */; };
+		B957CBD0257D7F4C00DAD9BE /* SwipingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957CBCF257D7F4C00DAD9BE /* SwipingController.swift */; };
 		B96FB8A02575A5E500ADD69A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96FB89F2575A5E500ADD69A /* AppDelegate.swift */; };
 		B96FB8A22575A5E500ADD69A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96FB8A12575A5E500ADD69A /* SceneDelegate.swift */; };
-		B96FB8A42575A5E500ADD69A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96FB8A32575A5E500ADD69A /* ViewController.swift */; };
 		B96FB8A72575A5E500ADD69A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B96FB8A52575A5E500ADD69A /* Main.storyboard */; };
 		B96FB8A92575A5E600ADD69A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B96FB8A82575A5E600ADD69A /* Assets.xcassets */; };
 		B96FB8AC2575A5E600ADD69A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B96FB8AA2575A5E600ADD69A /* LaunchScreen.storyboard */; };
@@ -27,10 +27,10 @@
 /* Begin PBXFileReference section */
 		515DF4AFF3078E3BE2621D35 /* Pods_Quotables.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quotables.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2055D4F3387617FFDF8A911 /* Pods-Quotables.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quotables.debug.xcconfig"; path = "Target Support Files/Pods-Quotables/Pods-Quotables.debug.xcconfig"; sourceTree = "<group>"; };
+		B957CBCF257D7F4C00DAD9BE /* SwipingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingController.swift; sourceTree = "<group>"; };
 		B96FB89C2575A5E500ADD69A /* Quotables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotables.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B96FB89F2575A5E500ADD69A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B96FB8A12575A5E500ADD69A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B96FB8A32575A5E500ADD69A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B96FB8A62575A5E500ADD69A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B96FB8A82575A5E600ADD69A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B96FB8AB2575A5E600ADD69A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -131,9 +131,9 @@
 			isa = PBXGroup;
 			children = (
 				B96FB8B62575A6A500ADD69A /* Favourites.swift */,
-				B96FB8A32575A5E500ADD69A /* ViewController.swift */,
 				B9713F2F257853E800C43C01 /* QuoteTableViewController.swift */,
 				B9713F33257859C600C43C01 /* QuoteTVC.swift */,
+				B957CBCF257D7F4C00DAD9BE /* SwipingController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -263,9 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B96FB8A42575A5E500ADD69A /* ViewController.swift in Sources */,
 				B9713F34257859C600C43C01 /* QuoteTVC.swift in Sources */,
 				B96FB8C12575A97100ADD69A /* FavouritedQuote.swift in Sources */,
+				B957CBD0257D7F4C00DAD9BE /* SwipingController.swift in Sources */,
 				B96FB8A02575A5E500ADD69A /* AppDelegate.swift in Sources */,
 				B96FB8CC2575C8B200ADD69A /* QuoteManager.swift in Sources */,
 				B96FB8A22575A5E500ADD69A /* SceneDelegate.swift in Sources */,

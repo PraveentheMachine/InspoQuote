@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import SkeletonView
 class QuoteTVC: UITableViewCell {
 
     let buttonColour = UIColor(red: 0.19, green: 0.20, blue: 0.42, alpha: 1.00)
@@ -18,7 +18,14 @@ class QuoteTVC: UITableViewCell {
     @IBOutlet weak var favouriteButton: UIButton!
     @IBOutlet weak var quoteView: UIView!
     override func awakeFromNib() {
+        
         super.awakeFromNib()
+        setupMethod()
+        }
+
+    
+    //primarily created so that my awakeFromNIB function was tidier
+    func setupMethod () {
         
         copyButton.backgroundColor = .clear
         copyButton.layer.cornerRadius = 8
@@ -39,12 +46,7 @@ class QuoteTVC: UITableViewCell {
         shareButton.layer.cornerRadius = 8
         shareButton.layer.borderWidth = 1
         shareButton.layer.backgroundColor = buttonColour.cgColor
-        
-
-
-        // Initialization code
     }
-
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
             
