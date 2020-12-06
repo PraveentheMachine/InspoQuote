@@ -9,10 +9,17 @@
 import Foundation
 import UIKit
 
-class Favourites : UITableView{
+class Favourites : UITableViewController{
     
     
+    override func viewDidLoad() {
+//        self.navigationItem.setHidesBackButton(true, animated: true)
+
+    }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goToItem", sender: self)
+    }
     
     //
 
