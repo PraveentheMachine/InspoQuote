@@ -44,9 +44,7 @@ class QuoteManger{
         let decoder = JSONDecoder()
         do{
             let decodedData = try decoder.decode(quoteContainer.self, from: quoteData)
-    
             self.quoteList = decodedData.quoteContainer.Quotes
-            print(quoteList)
             }
         catch{
             print("ERROR \(error)")

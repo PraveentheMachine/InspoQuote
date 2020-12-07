@@ -31,7 +31,7 @@
                                 <color key="sectionIndexBackgroundColor" systemColor="systemPinkColor"/>
                                 <color key="sectionIndexTrackingBackgroundColor" systemColor="systemOrangeColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="quoteCell" rowHeight="250" id="WnJ-Ux-dB3" customClass="QuoteTVC" customModule="Quotables" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="quoteCell" rowHeight="250" id="WnJ-Ux-dB3" customClass="QuoteTableViewCell" customModule="Quotables" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WnJ-Ux-dB3" id="CYR-Jh-kto">
@@ -64,6 +64,9 @@
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <color key="titleShadowColor" red="0.14117647059999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="copyButtonPressed:" destination="WnJ-Ux-dB3" eventType="touchUpInside" id="ZUa-gX-cCO"/>
+                                                            </connections>
                                                         </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YlM-Fi-PTX">
                                                             <rect key="frame" x="15" y="30" width="344" height="75"/>
@@ -92,6 +95,9 @@
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <color key="titleShadowColor" red="0.14117647059999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="shareButtonPressed:" destination="WnJ-Ux-dB3" eventType="touchUpInside" id="Eff-rB-gDE"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -124,7 +130,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <outlet property="authorLabel" destination="OeM-gS-KaZ" id="yPl-fs-00c"/>
+                                            <outlet property="authorLabel" destination="OeM-gS-KaZ" id="sr5-cL-Ep1"/>
                                             <outlet property="copyButton" destination="bJT-1E-OpE" id="K9L-f0-vtr"/>
                                             <outlet property="favouriteButton" destination="gR9-Li-pZq" id="Uwv-hl-jNe"/>
                                             <outlet property="quoteLabel" destination="YlM-Fi-PTX" id="tLU-gZ-DBA"/>
