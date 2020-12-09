@@ -20,7 +20,7 @@ class QuoteManger{
             
             let task = session.dataTask(with: url) { (data, Response, error) in
                 if error != nil {
-                    print("Error occured \(error)")
+                    print("ERROR WRITING \(String(describing: error))")
                     return
                 }
       

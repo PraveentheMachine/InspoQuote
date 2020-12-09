@@ -22,39 +22,55 @@ class QuoteTableViewCell: UITableViewCell {
     @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var favouriteButton: UIButton!
     @IBOutlet weak var quoteView: UIView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         setupMethod()
     }
     
-    
+    /**
+         Method which calls delegate in QuoteTableViewController that saves a quote favourited by the user persistently!
+     */
+    @IBAction func favouriteButtonPressed(_ sender: UIButton){
+        delegate?.didTapFavouriteButton(with: quoteLabel.text!, with: authorLabel.text!)
+    }
+    /**
+     Method which calls delegate in QuoteTableViewController that opens popup for a user 
+     */
     @IBAction func shareButtonPressed(_ sender: UIButton) {
         delegate?.didTapShareButton(with: quoteLabel.text!, with: authorLabel.text!)
     }
     
     
     @IBAction func copyButtonPressed(_ sender: UIButton) {
+        print("BEING CALLED")
         delegate?.didTapCopyButton(with: quoteLabel.text!, with: authorLabel.text!)
     }
     
     
-    //primarily created so that my awakeFromNIB function was tidier
+    
+    
+    /**
+     Method primarily created so that my awakeFromNIB function was tidier
+     **/
     func setupMethod () {
-        
-        copyButton.backgroundColor = .clear
-        copyButton.layer.cornerRadius = 8
-        copyButton.layer.borderWidth = 1
-        copyButton.layer.backgroundColor = buttonColour.cgColor
-        
-        favouriteButton.backgroundColor = .clear
-        favouriteButton.layer.cornerRadius = 8
-        favouriteButton.layer.borderWidth = 1
-        favouriteButton.layer.backgroundColor = buttonColour.cgColor
-        
-        shareButton.backgroundColor = .clear
-        shareButton.layer.cornerRadius = 8
-        shareButton.layer.borderWidth = 1
-        shareButton.layer.backgroundColor = buttonColour.cgColor
+        if copyButton != nil{
+            copyButton.backgroundColor = .clear
+            copyButton.layer.cornerRadius = 8
+            copyButton.layer.borderWidth = 1
+            copyButton.layer.backgroundColor = buttonColour.cgColor
+            
+            favouriteButton.backgroundColor = .clear
+            favouriteButton.layer.cornerRadius = 8
+            favouriteButton.layer.borderWidth = 1
+            favouriteButton.layer.backgroundColor = buttonColour.cgColor
+            
+            
+            shareButton.backgroundColor = .clear
+            shareButton.layer.cornerRadius = 8
+            shareButton.layer.borderWidth = 1
+            shareButton.layer.backgroundColor = buttonColour.cgColor
+        }
     }
     
     
