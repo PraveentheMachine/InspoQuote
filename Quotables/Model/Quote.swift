@@ -10,7 +10,7 @@ import UIKit
 
 struct quoteContainer : Decodable{
     
-    let quoteContainer: Quotes
+    let quoteContainer: Quotes 
     
 }
 
@@ -22,9 +22,9 @@ struct Quote: Decodable, Equatable {
     let author: String
     let quote: String
     static func == (lhs: Quote, rhs: Quote) -> Bool {
-            return
-                lhs.author == rhs.author &&
-                lhs.quote == rhs.quote
-
-        }
+        return
+            lhs.author == rhs.author &&
+            lhs.quote == rhs.quote
+        
+    }
 }

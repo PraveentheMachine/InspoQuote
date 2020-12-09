@@ -8,26 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		1B812AC08A74521BA5F04EE3 /* Pods_Quotables.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 515DF4AFF3078E3BE2621D35 /* Pods_Quotables.framework */; };
-		B957CBD0257D7F4C00DAD9BE /* SwipingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957CBCF257D7F4C00DAD9BE /* SwipingController.swift */; };
 		B96FB8A02575A5E500ADD69A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96FB89F2575A5E500ADD69A /* AppDelegate.swift */; };
 		B96FB8A22575A5E500ADD69A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96FB8A12575A5E500ADD69A /* SceneDelegate.swift */; };
 		B96FB8A72575A5E500ADD69A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B96FB8A52575A5E500ADD69A /* Main.storyboard */; };
 		B96FB8A92575A5E600ADD69A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B96FB8A82575A5E600ADD69A /* Assets.xcassets */; };
 		B96FB8AC2575A5E600ADD69A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B96FB8AA2575A5E600ADD69A /* LaunchScreen.storyboard */; };
-		B96FB8B72575A6A500ADD69A /* Favourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96FB8B62575A6A500ADD69A /* Favourites.swift */; };
+		B96FB8B72575A6A500ADD69A /* FavouritedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96FB8B62575A6A500ADD69A /* FavouritedTableViewController.swift */; };
 		B96FB8BE2575A7F400ADD69A /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96FB8BD2575A7F400ADD69A /* Quote.swift */; };
 		B96FB8C12575A97100ADD69A /* FavouritedQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96FB8C02575A97100ADD69A /* FavouritedQuote.swift */; };
 		B96FB8CC2575C8B200ADD69A /* QuoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96FB8CB2575C8B200ADD69A /* QuoteManager.swift */; };
 		B9713F30257853E800C43C01 /* QuoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9713F2F257853E800C43C01 /* QuoteTableViewController.swift */; };
-		B9713F34257859C600C43C01 /* QuoteTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9713F33257859C600C43C01 /* QuoteTVC.swift */; };
+		B9713F34257859C600C43C01 /* QuoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9713F33257859C600C43C01 /* QuoteTableViewCell.swift */; };
 		B9E5CC05257888DD003B0227 /* FredokaOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9E5CC04257888DD003B0227 /* FredokaOne-Regular.ttf */; };
 		B9E5CC0825788A66003B0227 /* Rubik-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9E5CC0725788A66003B0227 /* Rubik-VariableFont_wght.ttf */; };
+		B9E5E56E257DCCB300C95033 /* FavouriteQuoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E5E56D257DCCB300C95033 /* FavouriteQuoteTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		515DF4AFF3078E3BE2621D35 /* Pods_Quotables.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quotables.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2055D4F3387617FFDF8A911 /* Pods-Quotables.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quotables.debug.xcconfig"; path = "Target Support Files/Pods-Quotables/Pods-Quotables.debug.xcconfig"; sourceTree = "<group>"; };
-		B957CBCF257D7F4C00DAD9BE /* SwipingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingController.swift; sourceTree = "<group>"; };
 		B96FB89C2575A5E500ADD69A /* Quotables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotables.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B96FB89F2575A5E500ADD69A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B96FB8A12575A5E500ADD69A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,14 +34,15 @@
 		B96FB8A82575A5E600ADD69A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B96FB8AB2575A5E600ADD69A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B96FB8AD2575A5E600ADD69A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B96FB8B62575A6A500ADD69A /* Favourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourites.swift; sourceTree = "<group>"; };
+		B96FB8B62575A6A500ADD69A /* FavouritedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritedTableViewController.swift; sourceTree = "<group>"; };
 		B96FB8BD2575A7F400ADD69A /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		B96FB8C02575A97100ADD69A /* FavouritedQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritedQuote.swift; sourceTree = "<group>"; };
 		B96FB8CB2575C8B200ADD69A /* QuoteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteManager.swift; sourceTree = "<group>"; };
 		B9713F2F257853E800C43C01 /* QuoteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteTableViewController.swift; sourceTree = "<group>"; };
-		B9713F33257859C600C43C01 /* QuoteTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteTVC.swift; sourceTree = "<group>"; };
+		B9713F33257859C600C43C01 /* QuoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteTableViewCell.swift; sourceTree = "<group>"; };
 		B9E5CC04257888DD003B0227 /* FredokaOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FredokaOne-Regular.ttf"; sourceTree = "<group>"; };
 		B9E5CC0725788A66003B0227 /* Rubik-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		B9E5E56D257DCCB300C95033 /* FavouriteQuoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteQuoteTableViewCell.swift; sourceTree = "<group>"; };
 		EF69587EEF03656AC88678AC /* Pods-Quotables.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quotables.release.xcconfig"; path = "Target Support Files/Pods-Quotables/Pods-Quotables.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,10 +130,10 @@
 		B96FB8BC2575A7BD00ADD69A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B96FB8B62575A6A500ADD69A /* Favourites.swift */,
+				B96FB8B62575A6A500ADD69A /* FavouritedTableViewController.swift */,
 				B9713F2F257853E800C43C01 /* QuoteTableViewController.swift */,
-				B9713F33257859C600C43C01 /* QuoteTVC.swift */,
-				B957CBCF257D7F4C00DAD9BE /* SwipingController.swift */,
+				B9713F33257859C600C43C01 /* QuoteTableViewCell.swift */,
+				B9E5E56D257DCCB300C95033 /* FavouriteQuoteTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -263,15 +263,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9713F34257859C600C43C01 /* QuoteTVC.swift in Sources */,
+				B9713F34257859C600C43C01 /* QuoteTableViewCell.swift in Sources */,
 				B96FB8C12575A97100ADD69A /* FavouritedQuote.swift in Sources */,
-				B957CBD0257D7F4C00DAD9BE /* SwipingController.swift in Sources */,
 				B96FB8A02575A5E500ADD69A /* AppDelegate.swift in Sources */,
 				B96FB8CC2575C8B200ADD69A /* QuoteManager.swift in Sources */,
 				B96FB8A22575A5E500ADD69A /* SceneDelegate.swift in Sources */,
 				B96FB8BE2575A7F400ADD69A /* Quote.swift in Sources */,
 				B9713F30257853E800C43C01 /* QuoteTableViewController.swift in Sources */,
-				B96FB8B72575A6A500ADD69A /* Favourites.swift in Sources */,
+				B96FB8B72575A6A500ADD69A /* FavouritedTableViewController.swift in Sources */,
+				B9E5E56E257DCCB300C95033 /* FavouriteQuoteTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

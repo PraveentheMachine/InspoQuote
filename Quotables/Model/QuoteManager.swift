@@ -20,7 +20,7 @@ class QuoteManger{
             
             let task = session.dataTask(with: url) { (data, Response, error) in
                 if error != nil {
-                    print("Error occured \(error)")
+                    print("ERROR WRITING \(String(describing: error))")
                     return
                 }
       
@@ -44,9 +44,7 @@ class QuoteManger{
         let decoder = JSONDecoder()
         do{
             let decodedData = try decoder.decode(quoteContainer.self, from: quoteData)
-    
             self.quoteList = decodedData.quoteContainer.Quotes
-            print(quoteList)
             }
         catch{
             print("ERROR \(error)")
