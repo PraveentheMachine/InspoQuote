@@ -1,9 +1,10 @@
 # Quotables
 This is a CRUD application I have created which displays inspirational quotes for users. It has been developed using Swift and Realm, I have hosted a JSON on GitHub Pages which contains all the quotes utilised in this application.  
 
-This is the current Home design
+<h4>This is my current Home design</h4>
 
-![](Screenshots/Simulator_Screenshot _Home - Version 1.png)
+<img src = "Screenshots/Simulator_Screenshot%20_Favourites%20-%20Version%201.png" height = 450/>
 
-This is the current Favourites screen design
-![](Screenshots/Simulator_Screenshot _Favourites - Version 1.png)
+<h4>This is my current Favourites screen design</h4>
+
+<img src = "Screenshots/Simulator_Screenshot%20_Favourites%20-%20Version%201.png" height = 450/>
