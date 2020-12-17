@@ -7,4 +7,4 @@ This is a CRUD application I have created which displays inspirational quotes fo
 
 <h4>This is my current Favourites screen design</h4>
 
-<img src = "Screenshots/Simulator_Screenshot%20_Favourites%20-%20Version%201.png" height = 450/>
+<img src = "Screenshots/Simulator_Screenshot%20_Favourites%20-%20Version%202.png" height = 450/>
