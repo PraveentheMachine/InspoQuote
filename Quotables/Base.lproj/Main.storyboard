@@ -130,7 +130,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.18823529410000001" green="0.20000000000000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>
+<!--                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>-->
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="authorLabel" destination="OeM-gS-KaZ" id="sr5-cL-Ep1"/>
@@ -300,7 +300,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.18823529410000001" green="0.20000000000000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>
+<!--                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>-->
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="authorLabel" destination="6nK-sB-FZg" id="Lsc-Ks-YsL"/>
