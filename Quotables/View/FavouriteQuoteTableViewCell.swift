@@ -7,22 +7,43 @@
 
 import UIKit
 
+//Protocol for handling interactions withthe share button
+protocol FavouriteQuoteTableViewCellDelegate: AnyObject {
+    func didTapShareButton(with quoteText: String, with authorText: String)
+}
+
 class FavouriteQuoteTableViewCell: UITableViewCell {
-    
+
     @IBOutlet weak var authorLabel: UILabel!
     @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var shareButton: UIButton!
     @IBOutlet weak var quoteView: UIView!
-    let buttonColour = UIColor(red: 0.19, green: 0.20, blue: 0.42, alpha: 1.00)
-
+    
+    
+    weak var delegate : FavouriteQuoteTableViewCellDelegate?
     
     override func awakeFromNib() {
+        
         super.awakeFromNib()
         shareButton.backgroundColor = .clear
         shareButton.layer.cornerRadius = 8
         shareButton.layer.borderWidth = 1
-        shareButton.layer.backgroundColor = buttonColour.cgColor
+        shareButton.layer.backgroundColor = Statics.defaultPurpleColour.cgColor
     }
 
 
+    @IBAction func shareButtonPressed(_ sender: UIButton) {
+     
+        delegate?.didTapShareButton(with: quoteLabel.text!, with: authorLabel.text!)
+
+    }
+    
 }
+
+
+
+
+
+
+
+
