@@ -1,4 +1,4 @@
-# Quotables
+# InspoQuote
 This is a CRUD application I have created which displays inspirational quotes for users. It has been developed using Swift and Realm, I have hosted a JSON on GitHub Pages which contains all the quotes utilised in this application.  
 
 <h4>This is my current Home design</h4>
