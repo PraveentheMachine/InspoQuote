@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B812AC08A74521BA5F04EE3 /* Pods_Quotables.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 515DF4AFF3078E3BE2621D35 /* Pods_Quotables.framework */; };
+		B9248B84258AF63B00995760 /* Statics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9248B83258AF63B00995760 /* Statics.swift */; };
 		B96FB8A02575A5E500ADD69A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96FB89F2575A5E500ADD69A /* AppDelegate.swift */; };
 		B96FB8A22575A5E500ADD69A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96FB8A12575A5E500ADD69A /* SceneDelegate.swift */; };
 		B96FB8A72575A5E500ADD69A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B96FB8A52575A5E500ADD69A /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		515DF4AFF3078E3BE2621D35 /* Pods_Quotables.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quotables.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2055D4F3387617FFDF8A911 /* Pods-Quotables.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quotables.debug.xcconfig"; path = "Target Support Files/Pods-Quotables/Pods-Quotables.debug.xcconfig"; sourceTree = "<group>"; };
+		B9248B83258AF63B00995760 /* Statics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statics.swift; sourceTree = "<group>"; };
 		B96FB89C2575A5E500ADD69A /* Quotables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotables.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B96FB89F2575A5E500ADD69A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B96FB8A12575A5E500ADD69A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,20 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B948F2E72582EDE100C39A72 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		B948F2E82582EEC800C39A72 /* SharedValues */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SharedValues;
+			sourceTree = "<group>";
+		};
 		B96FB8932575A5E400ADD69A = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +112,7 @@
 		B96FB89E2575A5E500ADD69A /* Quotables */ = {
 			isa = PBXGroup;
 			children = (
+				B948F2E82582EEC800C39A72 /* SharedValues */,
 				B9E5CC03257888B9003B0227 /* Fonts */,
 				B96FB8B92575A79200ADD69A /* Model */,
 				B96FB8BB2575A7B000ADD69A /* View */,
@@ -116,6 +133,7 @@
 				B96FB8BD2575A7F400ADD69A /* Quote.swift */,
 				B96FB8C02575A97100ADD69A /* FavouritedQuote.swift */,
 				B96FB8CB2575C8B200ADD69A /* QuoteManager.swift */,
+				B9248B83258AF63B00995760 /* Statics.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -123,6 +141,8 @@
 		B96FB8BB2575A7B000ADD69A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B9713F33257859C600C43C01 /* QuoteTableViewCell.swift */,
+				B9E5E56D257DCCB300C95033 /* FavouriteQuoteTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -130,10 +150,8 @@
 		B96FB8BC2575A7BD00ADD69A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B96FB8B62575A6A500ADD69A /* FavouritedTableViewController.swift */,
 				B9713F2F257853E800C43C01 /* QuoteTableViewController.swift */,
-				B9713F33257859C600C43C01 /* QuoteTableViewCell.swift */,
-				B9E5E56D257DCCB300C95033 /* FavouriteQuoteTableViewCell.swift */,
+				B96FB8B62575A6A500ADD69A /* FavouritedTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -141,6 +159,7 @@
 		B9E5CC03257888B9003B0227 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				B948F2E72582EDE100C39A72 /* New Group */,
 				B9E5CC0725788A66003B0227 /* Rubik-VariableFont_wght.ttf */,
 				B9E5CC04257888DD003B0227 /* FredokaOne-Regular.ttf */,
 			);
@@ -270,6 +289,7 @@
 				B96FB8A22575A5E500ADD69A /* SceneDelegate.swift in Sources */,
 				B96FB8BE2575A7F400ADD69A /* Quote.swift in Sources */,
 				B9713F30257853E800C43C01 /* QuoteTableViewController.swift in Sources */,
+				B9248B84258AF63B00995760 /* Statics.swift in Sources */,
 				B96FB8B72575A6A500ADD69A /* FavouritedTableViewController.swift in Sources */,
 				B9E5E56E257DCCB300C95033 /* FavouriteQuoteTableViewCell.swift in Sources */,
 			);
@@ -426,7 +446,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = praveenbandarage.me.Quotables;
+				PRODUCT_BUNDLE_IDENTIFIER = praveenbandarage.me.InspoQuote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -446,7 +466,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = praveenbandarage.me.Quotables;
+				PRODUCT_BUNDLE_IDENTIFIER = praveenbandarage.me.InspoQuote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

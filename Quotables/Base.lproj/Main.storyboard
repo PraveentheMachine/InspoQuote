@@ -42,10 +42,10 @@
                                                     <rect key="frame" x="20" y="11" width="374" height="228"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gR9-Li-pZq">
-                                                            <rect key="frame" x="15" y="173" width="105" height="33"/>
+                                                            <rect key="frame" x="19.5" y="173" width="100" height="33"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="33" id="IBZ-oR-W21"/>
-                                                                <constraint firstAttribute="width" constant="105" id="VZ7-P3-KyU"/>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="VZ7-P3-KyU"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="RubikRoman-Regular" family="Rubik" pointSize="17"/>
                                                             <state key="normal" title="Favourite">
@@ -57,9 +57,9 @@
                                                             </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJT-1E-OpE">
-                                                            <rect key="frame" x="134.5" y="173" width="105" height="33"/>
+                                                            <rect key="frame" x="137" y="173" width="100" height="33"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="105" id="BxS-Av-x91"/>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="BxS-Av-x91"/>
                                                                 <constraint firstAttribute="height" constant="33" id="iuB-7w-d1c"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="RubikRoman-Regular" family="Rubik" pointSize="17"/>
@@ -88,10 +88,10 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbD-Cn-bdg">
-                                                            <rect key="frame" x="255" y="173" width="105" height="33"/>
+                                                            <rect key="frame" x="254.5" y="173" width="100" height="33"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="33" id="82E-LW-SOw"/>
-                                                                <constraint firstAttribute="width" constant="105" id="bmJ-S7-Jrw"/>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="bmJ-S7-Jrw"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="RubikRoman-Regular" family="Rubik" pointSize="17"/>
                                                             <state key="normal" title="Share">
@@ -109,10 +109,10 @@
                                                         <constraint firstItem="YlM-Fi-PTX" firstAttribute="centerY" secondItem="Ql6-Xk-aaO" secondAttribute="centerY" constant="-46.5" id="2rF-FA-OWg"/>
                                                         <constraint firstItem="YlM-Fi-PTX" firstAttribute="leading" secondItem="OeM-gS-KaZ" secondAttribute="leading" id="4ke-15-PCB"/>
                                                         <constraint firstItem="YlM-Fi-PTX" firstAttribute="centerX" secondItem="Ql6-Xk-aaO" secondAttribute="centerX" id="8lG-eV-d1H"/>
-                                                        <constraint firstItem="DbD-Cn-bdg" firstAttribute="centerX" secondItem="Ql6-Xk-aaO" secondAttribute="centerX" constant="120.5" id="PJe-Ib-44X"/>
+                                                        <constraint firstItem="DbD-Cn-bdg" firstAttribute="centerX" secondItem="Ql6-Xk-aaO" secondAttribute="centerX" constant="117.5" id="PJe-Ib-44X"/>
                                                         <constraint firstItem="YlM-Fi-PTX" firstAttribute="trailing" secondItem="OeM-gS-KaZ" secondAttribute="trailing" id="Z5c-yx-Qsp"/>
                                                         <constraint firstItem="OeM-gS-KaZ" firstAttribute="centerX" secondItem="Ql6-Xk-aaO" secondAttribute="centerX" id="aIF-34-OYk"/>
-                                                        <constraint firstItem="gR9-Li-pZq" firstAttribute="centerX" secondItem="Ql6-Xk-aaO" secondAttribute="centerX" constant="-119.5" id="flz-Bl-EjQ"/>
+                                                        <constraint firstItem="gR9-Li-pZq" firstAttribute="centerX" secondItem="Ql6-Xk-aaO" secondAttribute="centerX" constant="-117.5" id="flz-Bl-EjQ"/>
                                                         <constraint firstItem="OeM-gS-KaZ" firstAttribute="centerY" secondItem="Ql6-Xk-aaO" secondAttribute="centerY" constant="10.75" id="l4z-an-U8H"/>
                                                         <constraint firstItem="OeM-gS-KaZ" firstAttribute="top" secondItem="YlM-Fi-PTX" secondAttribute="bottom" constant="7" id="nnd-Md-LNf"/>
                                                         <constraint firstItem="DbD-Cn-bdg" firstAttribute="centerY" secondItem="Ql6-Xk-aaO" secondAttribute="centerY" constant="75.5" id="sJD-5C-zSJ"/>
@@ -266,12 +266,15 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ayt-Os-Oe2">
                                                     <rect key="frame" x="134.5" y="164.5" width="105" height="35"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="105" id="IFE-Jl-Ock"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="105" id="IFE-Jl-Ock"/>
                                                         <constraint firstAttribute="height" constant="35" id="p6m-ie-Bhd"/>
                                                     </constraints>
                                                     <state key="normal" title="Share">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="shareButtonPressed:" destination="Ch5-qy-bfJ" eventType="touchUpInside" id="XNJ-a3-KZ4"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -313,7 +316,14 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Favourites" image="star.fill" catalog="system" id="cK0-Hi-gh2"/>
-                    <navigationItem key="navigationItem" id="I3Z-EA-uek"/>
+                    <navigationItem key="navigationItem" id="I3Z-EA-uek">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="AgC-GN-S3D">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addPersonalQuote:" destination="Rb7-oc-IET" id="WmH-CK-ZXV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="favouriteQuoteTableView" destination="QSM-dw-nFk" id="C3W-n8-zvT"/>
                     </connections>

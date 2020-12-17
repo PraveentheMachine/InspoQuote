@@ -7,7 +7,5 @@ target 'Quotables' do
 
   # Pods for Quotables
   pod 'RealmSwift'
-  pod 'SkeletonView'
-
 
 end
