@@ -48,7 +48,7 @@
                                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="VZ7-P3-KyU"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="RubikRoman-Regular" family="Rubik" pointSize="17"/>
-                                                            <state key="normal" title="Favourite">
+                                                            <state key="normal" title="Save">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <color key="titleShadowColor" red="0.18823529410000001" green="0.20000000000000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
                                                             </state>
@@ -129,9 +129,6 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.18823529410000001" green="0.20000000000000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <userDefinedRuntimeAttributes>
-<!--                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>-->
-                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="authorLabel" destination="OeM-gS-KaZ" id="sr5-cL-Ep1"/>
                                             <outlet property="copyButton" destination="bJT-1E-OpE" id="K9L-f0-vtr"/>
@@ -186,11 +183,11 @@
             </objects>
             <point key="canvasLocation" x="2480" y="-1416"/>
         </scene>
-        <!--Favourites-->
+        <!--Saved-->
         <scene sceneID="PNh-vG-FiO">
             <objects>
                 <navigationController id="HJq-QC-gBk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Favourites" image="star.fill" catalog="system" id="Q45-1Y-U4u"/>
+                    <tabBarItem key="tabBarItem" title="Saved" image="star.fill" catalog="system" id="Q45-1Y-U4u"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BXP-GL-uhU">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -228,7 +225,7 @@
             </objects>
             <point key="canvasLocation" x="1751" y="-678"/>
         </scene>
-        <!--Favourites-->
+        <!--Saved-->
         <scene sceneID="yEJ-Tm-aJb">
             <objects>
                 <tableViewController id="Rb7-oc-IET" customClass="FavouritedTableViewController" customModule="Quotables" customModuleProvider="target" sceneMemberID="viewController">
@@ -299,9 +296,6 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.18823529410000001" green="0.20000000000000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <userDefinedRuntimeAttributes>
-<!--                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>-->
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="authorLabel" destination="6nK-sB-FZg" id="Lsc-Ks-YsL"/>
                                     <outlet property="quoteLabel" destination="mNp-6P-2vt" id="K3h-og-uSy"/>
@@ -315,7 +309,7 @@
                             <outlet property="delegate" destination="Rb7-oc-IET" id="Cui-4m-EzF"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Favourites" image="star.fill" catalog="system" id="cK0-Hi-gh2"/>
+                    <tabBarItem key="tabBarItem" title="Saved" image="star.fill" catalog="system" id="cK0-Hi-gh2"/>
                     <navigationItem key="navigationItem" id="I3Z-EA-uek">
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="AgC-GN-S3D">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

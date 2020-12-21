@@ -26,7 +26,7 @@ class FavouritedTableViewController : UITableViewController{
     //Method used for setting up Favourite Table view controller, this is primarily a preference to remove all I can from the viewDidLoad method
     
     func setupMethod(){
-        self.navigationItem.title = "Favourites"
+        self.navigationItem.title = "Saved"
     
         favouriteQuoteTableView.reloadData()
         favouriteQuoteTableView.dataSource = self
@@ -50,18 +50,18 @@ class FavouritedTableViewController : UITableViewController{
         
         print("Button Pressed")
         //The alert message
-        let alert = UIAlertController(title: "Would you like to add your own quote?", message: "Feel free to add your own favourites quotes that you would like to save!", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Would you like to add your own quote?", message: "Feel free save your own quotes!", preferredStyle: .alert)
         
         //If a user does not want to add a qutoe give them the option to cancel
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
 
        //Textfields for both quote and author
         alert.addTextField(configurationHandler: { textField in
-            textField.placeholder = "Input your quote here..."
+            textField.placeholder = "Add your quote here..."
         })
         
         alert.addTextField(configurationHandler: { textField in
-            textField.placeholder = "Input the author here..."
+            textField.placeholder = "Add the author here..."
         })
         
         //Adding the quote and then persistently saving the quote

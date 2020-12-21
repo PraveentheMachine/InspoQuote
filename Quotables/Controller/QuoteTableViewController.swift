@@ -103,13 +103,16 @@ extension QuoteTableViewController : UITableViewDataSource, UITableViewDelegate 
 //Extension to handle button interactions thriugh delegation
 extension QuoteTableViewController: QuoteTableViewCellDelegate{
     
+   
     //When we tap the share button I mimicked the standard sharing option screen, you see on apps like Reddit.
-    func didTapShareButton(with quoteText: String, with authorText: String) {
+    func didTapShareButton(with quoteText: String, with authorText: String, sender: UIButton) {
+     
     let stringToShare = "\(quoteText) - \(authorText)"
-    let activityViewController = UIActivityViewController(activityItems: [stringToShare], applicationActivities: nil)
-        
-    activityViewController.popoverPresentationController?.sourceView = self.view
-    self.present(activityViewController, animated: true, completion: nil)
+        let shareSheetVC = UIActivityViewController(activityItems: [stringToShare], applicationActivities: nil)
+        present(shareSheetVC, animated: true)
+        shareSheetVC.popoverPresentationController?.sourceView = sender
+        let rect = CGRect(x: 0, y: 50 - 50 , width: self.view.frame.width, height: 50)
+        shareSheetVC.popoverPresentationController?.sourceRect = rect
     }
     
     

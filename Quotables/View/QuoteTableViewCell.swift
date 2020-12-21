@@ -11,7 +11,7 @@ import UIKit
 protocol QuoteTableViewCellDelegate: AnyObject {
     func didTapCopyButton(with quoteText: String, with authorName: String)
     func didTapFavouriteButton(with quoteText: String, with authorText: String)
-    func didTapShareButton(with quoteText: String, with authorText: String)
+    func didTapShareButton(with quoteText: String, with authorText: String, sender: UIButton)
 }
 
 
@@ -41,7 +41,7 @@ class QuoteTableViewCell: UITableViewCell {
     //Method which calls delegate in QuoteTableViewController that opens a shareable popup for the user
     
     @IBAction func shareButtonPressed(_ sender: UIButton) {
-        delegate?.didTapShareButton(with: quoteLabel.text!, with: authorLabel.text!)
+        delegate?.didTapShareButton(with: quoteLabel.text!, with: authorLabel.text!, sender: sender)
     }
     
     //Method which copies the quote and author to the clipboard, for pasting!
